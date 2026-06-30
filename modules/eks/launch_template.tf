@@ -2,7 +2,7 @@ resource "aws_launch_template" "eks_node_lt" {
 
   name_prefix = "${var.cluster_name}-node-"
   #image_id = var.ami_id
-  # instance_type = "c7i-flex.large"
+  instance_type = "c7i-flex.large"
   vpc_security_group_ids = [
     var.node_security_group_id
   ]

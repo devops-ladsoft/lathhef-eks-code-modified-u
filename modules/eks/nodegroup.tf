@@ -10,9 +10,9 @@ resource "aws_eks_node_group" "eks_node_group" {
 
   capacity_type = "ON_DEMAND"
    
-  instance_types = [
-    var.instance_type
-  ]
+  # instance_types = [
+  #   var.instance_type
+  # ]
 
   launch_template {
 
